@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Price Alert</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+
+      input {
+        margin: 5px;
+        padding: 5px;
+        width: 200px;
+      }
+
+      button {
+        padding: 5px 10px;
+        margin-top: 10px;
+      }
+
+      p {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>📈 Set a Price Alert</h2>
+
+    <input type="text" id="tickerInput" placeholder="Enter ticker (e.g. BTC)" />
+    <input type="number" id="priceInput" placeholder="Target price (e.g. 65000)" />
+    <br />
+    <button onclick="setAlert()">Set Alert</button>
+
+    <p id="response"></p>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
